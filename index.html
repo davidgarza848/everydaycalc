@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, easy-to-use calculators for paychecks, salaries, taxes, loans, discounts, grades, tips, and everyday math.">
+  <meta name="theme-color" content="#173b35">
+  <title>EverydayCalc — Free Calculators for Everyday Life</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#calculators">Calculators</a>
+      <a href="#about">About</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">FREE TOOLS • SIMPLE ANSWERS</span>
+        <h1>Make everyday math<br><em>make sense.</em></h1>
+        <p>Fast, free calculators for your money, work, shopping, school, and daily life. No account needed.</p>
+        <a class="button button-primary" href="#calculators">Explore calculators <span aria-hidden="true">↓</span></a>
+        <div class="hero-note"><span class="check">✓</span> Free to use <span class="dot">·</span> Works on your phone <span class="dot">·</span> No sign-up</div>
+      </div>
+      <div class="hero-card" aria-label="Example calculator preview">
+        <div class="card-top"><span class="mini-icon">↗</span><span>QUICK CALC</span><span class="live-dot"></span></div>
+        <div class="preview-label">Hourly pay</div>
+        <div class="preview-amount">$22.00 <small>/ hour</small></div>
+        <div class="preview-divider"></div>
+        <div class="preview-row"><span>Weekly (40 hours)</span><strong>$880.00</strong></div>
+        <div class="preview-row"><span>Annual (52 weeks)</span><strong>$45,760.00</strong></div>
+        <div class="preview-foot">Illustrative gross pay before taxes</div>
+      </div>
+      <div class="hero-decoration decor-one"></div><div class="hero-decoration decor-two"></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Website features">
+      <div><span class="trust-icon">◎</span><span><strong>Instant results</strong><small>Calculate in seconds</small></span></div>
+      <div><span class="trust-icon">▦</span><span><strong>Easy to understand</strong><small>Clear, simple breakdowns</small></span></div>
+      <div><span class="trust-icon">♡</span><span><strong>Always free</strong><small>No account required</small></span></div>
+    </section>
+
+    <section class="tools-section" id="calculators">
+      <div class="section-heading">
+        <div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need to calculate?</h2><p>Choose a tool below to get started.</p></div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="toolSearch" type="search" placeholder="Search calculators..." aria-label="Search calculators"></label>
+      </div>
+      <div class="category-tabs" role="group" aria-label="Filter calculator category">
+        <button class="tab active" data-category="all">All tools</button>
+        <button class="tab" data-category="money">Money</button>
+        <button class="tab" data-category="work">Work & pay</button>
+        <button class="tab" data-category="shopping">Shopping</button>
+        <button class="tab" data-category="everyday">Everyday</button>
+      </div>
+      <div class="tool-grid" id="toolGrid">
+        <button class="tool-card" data-tool="paycheck" data-category="work" data-keywords="paycheck take home salary income tax">
+          <span class="tool-icon mint">＄</span><span class="tool-category">WORK & PAY</span><strong>Paycheck Estimator</strong><span class="tool-desc">Estimate take-home pay with a simple tax-rate assumption.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="salary" data-category="work" data-keywords="hourly wage annual salary yearly weekly monthly">
+          <span class="tool-icon lavender">↗</span><span class="tool-category">WORK & PAY</span><strong>Hourly to Salary</strong><span class="tool-desc">Convert an hourly rate into weekly, monthly, and yearly pay.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="timecard" data-category="work" data-keywords="time card hours worked overtime wages">
+          <span class="tool-icon peach">◷</span><span class="tool-category">WORK & PAY</span><strong>Time Card Calculator</strong><span class="tool-desc">Add up hours and estimate gross earnings.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="loan" data-category="money" data-keywords="loan payment monthly interest rate principal">
+          <span class="tool-icon blue">▤</span><span class="tool-category">MONEY</span><strong>Loan Payment</strong><span class="tool-desc">Estimate a fixed monthly payment and total interest.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="tax" data-category="shopping" data-keywords="sales tax price total purchase">
+          <span class="tool-icon yellow">%</span><span class="tool-category">SHOPPING</span><strong>Sales Tax Calculator</strong><span class="tool-desc">See the estimated total after sales tax.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="discount" data-category="shopping" data-keywords="discount sale percentage save final price">
+          <span class="tool-icon pink">%</span><span class="tool-category">SHOPPING</span><strong>Discount Calculator</strong><span class="tool-desc">Find your savings and final sale price.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="tip" data-category="everyday" data-keywords="tip restaurant split bill people">
+          <span class="tool-icon mint">♡</span><span class="tool-category">EVERYDAY</span><strong>Tip & Split Bill</strong><span class="tool-desc">Calculate a tip and split the total between people.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="percentage" data-category="everyday" data-keywords="percentage increase decrease fraction">
+          <span class="tool-icon lavender">％</span><span class="tool-category">EVERYDAY</span><strong>Percentage Calculator</strong><span class="tool-desc">Calculate a percentage of any number.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="grade" data-category="everyday" data-keywords="grade score exam school average">
+          <span class="tool-icon peach">✎</span><span class="tool-category">EVERYDAY</span><strong>Grade Calculator</strong><span class="tool-desc">Calculate a score percentage from points earned.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="age" data-category="everyday" data-keywords="age birthday date born">
+          <span class="tool-icon blue">◫</span><span class="tool-category">EVERYDAY</span><strong>Age Calculator</strong><span class="tool-desc">Calculate age in years, months, and days.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+      </div>
+      <p class="no-results" id="noResults" hidden>No calculators match your search. Try another term.</p>
+    </section>
+
+    <section class="ad-note" aria-label="Advertising information">
+      <div class="ad-note-icon">↗</div><div><strong>Free tools, supported by advertising</strong><p>We may display ads in the future to help keep these tools free. Ads will only be added after the site is set up with an advertising provider and approved.</p></div>
+      <span class="ad-placeholder">AD SPACE<br><small>reserved for future use</small></span>
+    </section>
+
+    <section class="about-section" id="about">
+      <div><span class="eyebrow">OUR APPROACH</span><h2>Useful answers.<br><em>Without the fuss.</em></h2></div>
+      <p>EverydayCalc is designed to make common calculations easier. Use the tools for quick estimates, understand the assumptions behind the numbers, and make decisions with more confidence. Results are estimates and should be checked when accuracy is especially important.</p>
+    </section>
+
+    <section class="faq-section">
+      <span class="eyebrow">GOOD TO KNOW</span><h2>Frequently asked questions</h2>
+      <details><summary>Are these calculators free?</summary><p>Yes. You can use the calculators without creating an account.</p></details>
+      <details><summary>Are the results official financial or tax advice?</summary><p>No. Results are estimates. Paycheck estimates use the tax rate you enter and do not calculate actual federal, state, or local tax liability. Loan results assume a fixed rate and regular monthly payments.</p></details>
+      <details><summary>How does EverydayCalc make money?</summary><p>The site may earn revenue from advertising after it is connected to an advertising provider and approved. No ads are active in this starter version.</p></details>
+      <details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to mobile phones, tablets, and desktop screens.</p></details>
+    </section>
+
+    <section class="privacy-section" id="privacy">
+      <span class="eyebrow">PRIVACY & CONTACT</span><h2>Simple by design.</h2>
+      <p>Calculations run in your browser in this starter version; values you enter are not sent to a server by these calculators. If analytics or advertising services are added later, update this notice to explain what those services collect and how they use data.</p>
+      <p><strong>Contact:</strong> Replace this line with a working contact email before publishing the website.</p>
+      <p class="legal-note">This starter site is not legal, tax, financial, or educational advice. Review and customize all site policies before launch.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
+    <a href="#privacy">Privacy & contact</a>
+  </footer>
+
+  <dialog id="calcDialog" class="calc-dialog">
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
+    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
+    <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
+    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
