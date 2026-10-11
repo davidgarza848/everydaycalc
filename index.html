@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Free, easy-to-use calculators for paychecks, salaries, taxes, loans, discounts, grades, tips, and everyday math.">
   <meta name="theme-color" content="#173b35">
+  <meta property="og:title" content="EverydayCalc — Free Everyday Calculators">
+  <meta property="og:description" content="Free calculators for paychecks, work schedules, overtime, loans, shopping, school, and everyday math. No account needed.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://davidgarza848.github.io/everydaycalc/">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +18,7 @@
     <nav aria-label="Main navigation">
       <a href="#calculators">Calculators</a>
       <a href="#about">About</a>
-      <a href="#privacy">Privacy</a>
+      <a href="privacy.html">Privacy</a>
     </nav>
   </header>
 
@@ -88,6 +92,19 @@
         <button class="tool-card" data-tool="age" data-category="everyday" data-keywords="age birthday date born">
           <span class="tool-icon blue">◫</span><span class="tool-category">EVERYDAY</span><strong>Age Calculator</strong><span class="tool-desc">Calculate age in years, months, and days.</span><span class="tool-link">Open calculator <b>↗</b></span>
         </button>
+
+        <button class="tool-card" data-tool="overtime" data-category="work" data-keywords="overtime pay time and a half extra hours weekly wages">
+          <span class="tool-icon peach">⏱</span><span class="tool-category">WORK & PAY</span><strong>Overtime Pay</strong><span class="tool-desc">Estimate regular pay plus overtime earnings.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="schedule" data-category="work" data-keywords="work schedule weekly hours shift planner clock in clock out break weekly pay">
+          <span class="tool-icon blue">▦</span><span class="tool-category">WORK & PAY</span><strong>Work Schedule Calculator</strong><span class="tool-desc">Enter shifts for the week to total work hours, breaks, and optional gross pay.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="compound" data-category="money" data-keywords="compound interest savings investment growth monthly contribution">
+          <span class="tool-icon mint">↗</span><span class="tool-category">MONEY</span><strong>Compound Interest</strong><span class="tool-desc">Estimate how savings could grow over time.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="change" data-category="everyday" data-keywords="percentage change increase decrease before after difference">
+          <span class="tool-icon lavender">%</span><span class="tool-category">EVERYDAY</span><strong>Percentage Change</strong><span class="tool-desc">Calculate the percentage increase or decrease.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
       </div>
       <p class="no-results" id="noResults" hidden>No calculators match your search. Try another term.</p>
     </section>
@@ -112,16 +129,17 @@
 
     <section class="privacy-section" id="privacy">
       <span class="eyebrow">PRIVACY & CONTACT</span><h2>Simple by design.</h2>
-      <p>Calculations run in your browser in this starter version; values you enter are not sent to a server by these calculators. If analytics or advertising services are added later, update this notice to explain what those services collect and how they use data.</p>
-      <p><strong>Contact:</strong> Replace this line with a working contact email before publishing the website.</p>
-      <p class="legal-note">This starter site is not legal, tax, financial, or educational advice. Review and customize all site policies before launch.</p>
+      <p>Calculations run in your browser; values you enter into the calculators are processed on your device by the calculator code. This site does not currently require an account.</p>
+      <p>If advertising or analytics services are added, those providers may use cookies or similar technologies to collect information such as browser, device, approximate location, and interactions. This policy must be reviewed and updated before any such services are enabled.</p>
+      <p><a href="privacy.html">Read the full privacy policy</a> · <a href="contact.html">Contact EverydayCalc</a></p>
+      <p class="legal-note">Calculator results are general estimates, not professional financial, tax, legal, medical, or educational advice. Verify important results independently.</p>
     </section>
   </main>
 
   <footer class="site-footer">
     <a class="brand footer-brand" href="#"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
     <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
-    <a href="#privacy">Privacy & contact</a>
+    <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a>
   </footer>
 
   <dialog id="calcDialog" class="calc-dialog">

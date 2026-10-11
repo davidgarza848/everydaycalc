@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://davidgarza848.github.io/everydaycalc/sitemap.xml
