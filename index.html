@@ -5,18 +5,26 @@
      crossorigin="anonymous"></script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Free, easy-to-use calculators for paychecks, salaries, taxes, loans, discounts, grades, tips, and everyday math.">
+  <meta name="description" content="Free, easy-to-use calculators for paychecks, salaries, overtime, loans, discounts, tips, grades, BMI, dates, and everyday math. No account needed. Runs in your browser.">
   <meta name="theme-color" content="#173b35">
+  <meta name="keywords" content="free calculator, paycheck calculator, hourly to salary, loan payment, tip calculator, percentage, BMI, overtime pay, work schedule">
   <meta property="og:title" content="EverydayCalc — Free Everyday Calculators">
-  <meta property="og:description" content="Free calculators for paychecks, work schedules, overtime, loans, shopping, school, and everyday math. No account needed.">
+  <meta property="og:description" content="Fast, free calculators for paychecks, work schedules, overtime, loans, shopping, school, BMI, and everyday math. No account needed.">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="https://davidgarza848.github.io/everydaycalc/">
+  <meta property="og:url" content="https://evrydaycalc.com/">
+  <meta property="og:site_name" content="EverydayCalc">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="EverydayCalc — Free Everyday Calculators">
+  <meta name="twitter:description" content="Fast, free calculators for paychecks, work schedules, overtime, loans, shopping, school, and everyday math.">
+  <link rel="canonical" href="https://evrydaycalc.com/">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
     <nav aria-label="Main navigation">
       <a href="#calculators">Calculators</a>
       <a href="#about">About</a>
@@ -46,14 +54,14 @@
     </section>
 
     <section class="trust-strip" aria-label="Website features">
-      <div><span class="trust-icon">◎</span><span><strong>Instant results</strong><small>Calculate in seconds</small></span></div>
-      <div><span class="trust-icon">▦</span><span><strong>Easy to understand</strong><small>Clear, simple breakdowns</small></span></div>
+      <div><span class="trust-icon">◎</span><span><strong>Instant results</strong><small>Calculate as you type</small></span></div>
+      <div><span class="trust-icon">▦</span><span><strong>Easy to understand</strong><small>Clear formulas & breakdowns</small></span></div>
       <div><span class="trust-icon">♡</span><span><strong>Always free</strong><small>No account required</small></span></div>
     </section>
 
     <section class="tools-section" id="calculators">
       <div class="section-heading">
-        <div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need to calculate?</h2><p>Choose a tool below to get started.</p></div>
+        <div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need to calculate?</h2><p>Choose a tool below to get started. Results update as you type.</p></div>
         <label class="search-box"><span aria-hidden="true">⌕</span><input id="toolSearch" type="search" placeholder="Search calculators..." aria-label="Search calculators"></label>
       </div>
       <div class="category-tabs" role="group" aria-label="Filter calculator category">
@@ -62,6 +70,7 @@
         <button class="tab" data-category="work">Work & pay</button>
         <button class="tab" data-category="shopping">Shopping</button>
         <button class="tab" data-category="everyday">Everyday</button>
+        <button class="tab" data-category="health">Health</button>
       </div>
       <div class="tool-grid" id="toolGrid">
         <button class="tool-card" data-tool="paycheck" data-category="work" data-keywords="paycheck take home salary income tax">
@@ -94,7 +103,6 @@
         <button class="tool-card" data-tool="age" data-category="everyday" data-keywords="age birthday date born">
           <span class="tool-icon blue">◫</span><span class="tool-category">EVERYDAY</span><strong>Age Calculator</strong><span class="tool-desc">Calculate age in years, months, and days.</span><span class="tool-link">Open calculator <b>↗</b></span>
         </button>
-
         <button class="tool-card" data-tool="overtime" data-category="work" data-keywords="overtime pay time and a half extra hours weekly wages">
           <span class="tool-icon peach">⏱</span><span class="tool-category">WORK & PAY</span><strong>Overtime Pay</strong><span class="tool-desc">Estimate regular pay plus overtime earnings.</span><span class="tool-link">Open calculator <b>↗</b></span>
         </button>
@@ -107,13 +115,19 @@
         <button class="tool-card" data-tool="change" data-category="everyday" data-keywords="percentage change increase decrease before after difference">
           <span class="tool-icon lavender">%</span><span class="tool-category">EVERYDAY</span><strong>Percentage Change</strong><span class="tool-desc">Calculate the percentage increase or decrease.</span><span class="tool-link">Open calculator <b>↗</b></span>
         </button>
+        <button class="tool-card" data-tool="bmi" data-category="health" data-keywords="bmi body mass index weight height health">
+          <span class="tool-icon pink">♡</span><span class="tool-category">HEALTH</span><strong>BMI Calculator</strong><span class="tool-desc">Calculate body mass index from height and weight.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
+        <button class="tool-card" data-tool="datediff" data-category="everyday" data-keywords="date difference days between dates duration weeks months">
+          <span class="tool-icon yellow">◷</span><span class="tool-category">EVERYDAY</span><strong>Days Between Dates</strong><span class="tool-desc">Count the days, weeks, and months between two dates.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </button>
       </div>
       <p class="no-results" id="noResults" hidden>No calculators match your search. Try another term.</p>
     </section>
 
     <section class="ad-note" aria-label="Advertising information">
-      <div class="ad-note-icon">↗</div><div><strong>Free tools, supported by advertising</strong><p>We may display ads in the future to help keep these tools free. Ads will only be added after the site is set up with an advertising provider and approved.</p></div>
-      <span class="ad-placeholder">AD SPACE<br><small>reserved for future use</small></span>
+      <div class="ad-note-icon">↗</div><div><strong>Free tools, supported by advertising</strong><p>This site uses Google AdSense to help keep the calculators free. Ads may appear once approved. See the <a href="privacy.html">privacy policy</a> for details.</p></div>
+      <span class="ad-placeholder">AD SPACE<br><small>reserved for ads</small></span>
     </section>
 
     <section class="about-section" id="about">
@@ -125,21 +139,22 @@
       <span class="eyebrow">GOOD TO KNOW</span><h2>Frequently asked questions</h2>
       <details><summary>Are these calculators free?</summary><p>Yes. You can use the calculators without creating an account.</p></details>
       <details><summary>Are the results official financial or tax advice?</summary><p>No. Results are estimates. Paycheck estimates use the tax rate you enter and do not calculate actual federal, state, or local tax liability. Loan results assume a fixed rate and regular monthly payments.</p></details>
-      <details><summary>How does EverydayCalc make money?</summary><p>The site may earn revenue from advertising after it is connected to an advertising provider and approved. No ads are active in this starter version.</p></details>
-      <details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to mobile phones, tablets, and desktop screens.</p></details>
+      <details><summary>How does EverydayCalc make money?</summary><p>The site uses Google AdSense advertising to help cover costs and keep the tools free. No account is required to use the calculators.</p></details>
+      <details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to mobile phones, tablets, and desktop screens. You can also bookmark individual calculators using the address bar after opening them.</p></details>
+      <details><summary>Do you store the numbers I enter?</summary><p>No. Calculations run entirely in your browser. The values you type are not sent to EverydayCalc servers.</p></details>
     </section>
 
     <section class="privacy-section" id="privacy">
       <span class="eyebrow">PRIVACY & CONTACT</span><h2>Simple by design.</h2>
-      <p>Calculations run in your browser; values you enter into the calculators are processed on your device by the calculator code. This site does not currently require an account.</p>
-      <p>If advertising or analytics services are added, those providers may use cookies or similar technologies to collect information such as browser, device, approximate location, and interactions. This policy must be reviewed and updated before any such services are enabled.</p>
+      <p>Calculations run in your browser; values you enter into the calculators are processed on your device by the calculator code. This site does not require an account.</p>
+      <p>Google AdSense is used for advertising. AdSense and related services may use cookies or similar technologies. See the privacy policy for details and choices.</p>
       <p><a href="privacy.html">Read the full privacy policy</a> · <a href="contact.html">Contact EverydayCalc</a></p>
       <p class="legal-note">Calculator results are general estimates, not professional financial, tax, legal, medical, or educational advice. Verify important results independently.</p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand footer-brand" href="#"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
     <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
     <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a>
   </footer>
