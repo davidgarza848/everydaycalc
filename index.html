@@ -18,7 +18,10 @@
   <meta name="twitter:title" content="EverydayCalc — Free Everyday Calculators">
   <meta name="twitter:description" content="Fast, free calculators for paychecks, mortgages, compound interest, work schedules, loans, shopping, school, and everyday math.">
   <link rel="canonical" href="https://evrydaycalc.com/">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
   <link rel="stylesheet" href="styles.css?v=3">
   <script type="application/ld+json">
@@ -211,10 +214,10 @@
   </footer>
 
   <dialog id="calcDialog" class="calc-dialog">
-    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
-    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close">×</button></div>
+    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate</button></form>
     <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
-    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
+    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates.</p>
   </dialog>
   <script src="script.js?v=3" defer></script>
 </body>
