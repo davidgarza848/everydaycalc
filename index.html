@@ -23,7 +23,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"EverydayCalc","url":"https://evrydaycalc.com/","description":"Free everyday calculators for paychecks, mortgages, loans, tips, BMI, grades, and more. No account needed."}
   </script>
@@ -34,7 +34,8 @@
     <nav aria-label="Main navigation">
       <a href="#calculators">Calculators</a>
       <a href="#guides">Guides</a>
-      <a href="#about">About</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
       <a href="privacy.html">Privacy</a>
     </nav>
   </header>
@@ -66,9 +67,7 @@
       <div><span class="trust-icon">♡</span><span><strong>Always free</strong><small>No account required</small></span></div>
     </section>
 
-    <div class="ad-slot ad-slot-top" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-    </div>
+    <div class="ad-slot ad-slot-top" aria-label="Sponsored"><p class="ad-label">Sponsored</p></div>
 
     <section class="tools-section" id="calculators">
       <div class="section-heading">
@@ -139,9 +138,7 @@
       <p class="no-results" id="noResults" hidden>No calculators match your search. Try another term.</p>
     </section>
 
-    <div class="ad-slot ad-slot-mid" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-    </div>
+    <div class="ad-slot ad-slot-mid" aria-label="Sponsored"><p class="ad-label">Sponsored</p></div>
 
     <section class="guides-section" id="guides">
       <span class="eyebrow">QUICK GUIDES</span>
@@ -180,13 +177,12 @@
       <div><strong>Free tools, supported by advertising</strong><p>This site uses Google AdSense to help keep the calculators free. See the <a href="privacy.html">privacy policy</a> for details on ads and cookies.</p></div>
     </section>
 
-    <div class="ad-slot ad-slot-bottom" aria-label="Advertisement">
-      <p class="ad-label">Advertisement</p>
-    </div>
+    <div class="ad-slot ad-slot-bottom" aria-label="Sponsored"><p class="ad-label">Sponsored</p></div>
 
     <section class="about-section" id="about">
       <div><span class="eyebrow">OUR APPROACH</span><h2>Useful answers.<br><em>Without the fuss.</em></h2></div>
-      <p>EverydayCalc is designed to make common calculations easier. Use the tools for quick estimates, understand the assumptions behind the numbers, and make decisions with more confidence. Results are estimates and should be checked when accuracy is especially important.</p>
+      <p>EverydayCalc is a free set of browser-based calculators for paychecks, mortgages, loans, shopping, school, health screening numbers, and everyday math. Each tool shows the idea behind the result—not only a final number—so you can judge whether the estimate fits your situation.</p>
+      <p>Calculations run on your device. We do not require an account. Results are general estimates, not professional financial, tax, legal, or medical advice. Learn more on the <a href="about.html">About page</a> or <a href="contact.html">contact us</a> with feedback.</p>
     </section>
 
     <section class="faq-section">
@@ -210,7 +206,7 @@
   <footer class="site-footer">
     <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
     <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
-    <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a>
+    <a href="about.html">About</a> · <a href="privacy.html">Privacy</a> · <a href="contact.html">Contact</a>
   </footer>
 
   <dialog id="calcDialog" class="calc-dialog">
@@ -219,6 +215,7 @@
     <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
     <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates.</p>
   </dialog>
-  <script src="script.js?v=3" defer></script>
+  <script src="script.js?v=4" defer></script>
+  <script>document.getElementById("year")&&(document.getElementById("year").textContent=new Date().getFullYear())</script>
 </body>
 </html>
