@@ -5,65 +5,84 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Compound Interest Calculator — Savings Growth Estimator</title>
-  <meta name="description" content="Free compound interest calculator. See how savings grow with monthly, quarterly, annual, or daily compounding. Instant results, no signup.">
-  <meta name="keywords" content="compound interest calculator, savings growth, APY estimate, investment growth">
+  <meta name="description" content="Free compound interest calculator. See how savings grow with monthly, quarterly, or daily compounding. Estimate future value and interest earned.">
+  <meta name="keywords" content="compound interest calculator, savings growth, investment compound interest, APY">
   <meta name="theme-color" content="#173b35">
   <link rel="canonical" href="https://evrydaycalc.com/compound-interest-calculator.html">
   <meta property="og:title" content="Compound Interest Calculator — Savings Growth Estimator">
-  <meta property="og:description" content="Free compound interest calculator. See how savings grow with monthly, quarterly, annual, or daily compounding.">
+  <meta property="og:description" content="Free compound interest calculator. See how savings grow with monthly, quarterly, or daily compounding.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://evrydaycalc.com/compound-interest-calculator.html">
+  <meta property="og:site_name" content="EverydayCalc">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Compound Interest Calculator","url":"https://evrydaycalc.com/compound-interest-calculator.html","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Free compound interest calculator for savings growth."}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is compounding?","acceptedAnswer":{"@type":"Answer","text":"Compounding means interest is added to the balance, so future interest is earned on both the original amount and prior interest."}},{"@type":"Question","name":"Does this include regular deposits?","acceptedAnswer":{"@type":"Answer","text":"Not in this version. It models a single starting amount left to grow."}},{"@type":"Question","name":"Are results guaranteed?","acceptedAnswer":{"@type":"Answer","text":"No. Rates change, and fees or taxes can reduce real returns. This is an educational estimate."}}]}</script>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body data-open-tool="compound">
   <header class="site-header">
-    <a class="brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
-    <nav><a href="/#calculators">Calculators</a><a href="/privacy.html">Privacy</a></nav>
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
   </header>
+
   <main class="tool-page">
-    <p class="breadcrumb"><a href="/">Home</a> · <a href="/#calculators">Calculators</a> · Money</p>
-    <h1>Compound Interest Calculator</h1>
-    <p class="lead">See how an investment or savings balance can grow when interest compounds over time. Choose monthly, quarterly, annual, or daily compounding.</p>
-    <div class="open-cta"><button type="button" class="button button-primary" id="openToolBtn">Open calculator</button></div>
-    <div class="ad-slot ad-slot-top" aria-label="Advertisement"><p class="ad-label">Advertisement</p></div>
-    <h2>How to use this calculator</h2>
-    <ol>
-      <li>Enter your starting amount (principal).</li>
-      <li>Enter the annual interest rate as a percentage.</li>
-      <li>Enter the number of years the money will grow.</li>
-      <li>Choose how often interest compounds (monthly is common for savings).</li>
-    </ol>
-    <h2>Formula</h2>
-    <div class="content-block"><p class="formula">A = P(1 + r/n)^(n·t)</p></div>
-    <h2>Example</h2>
-    <div class="content-block"><p>Starting with $10,000 at 5% compounded monthly for 10 years grows to about $16,470 — roughly $6,470 in interest earned.</p></div>
+    <div class="tool-page-hero">
+      <span class="eyebrow">MONEY</span>
+      <h1>Compound Interest Calculator</h1>
+      <p>Project how a starting balance can grow when interest is added to the balance and then earns interest itself. Choose compounding frequency and time horizon.</p>
+      <button type="button" class="button button-primary" id="openToolBtn">Open calculator</button>
+    </div>
+    <h2>Who this calculator is for</h2>
+    <div class="content-block">
+      <p>Use it for savings accounts, CDs, or simplified investment growth when you want a clear future-value estimate. It does not model market volatility, fees, taxes, or regular monthly deposits (unless you approximate by adjusting the starting amount).</p>
+    </div>
+    <h2>How the calculation works</h2>
+    <div class="content-block">
+      <p class="formula">A = P(1 + r/n)<sup>n·t</sup></p>
+      <p><strong>P</strong> is the starting principal, <strong>r</strong> is the annual interest rate as a decimal, <strong>n</strong> is compounds per year, and <strong>t</strong> is time in years. More frequent compounding produces slightly higher growth for the same nominal rate.</p>
+    </div>
+    <h2>Worked examples</h2>
+    <div class="content-block">
+      <p><strong>Example 1.</strong> $10,000 at 5% compounded monthly for 10 years grows to about <strong>$16,470</strong> (about $6,470 interest).</p>
+      <p><strong>Example 2.</strong> Same balance at 5% compounded annually for 10 years grows to about <strong>$16,289</strong>—a bit less than monthly compounding.</p>
+      <p><strong>Example 3.</strong> $5,000 at 4% monthly for 5 years → about <strong>$6,105</strong>.</p>
+    </div>
     <h2>Frequently asked questions</h2>
-    <details><summary>What is compounding?</summary><p>Compounding means interest is added to the balance, so future interest is earned on both the original amount and prior interest.</p></details>
-    <details><summary>Does this include regular deposits?</summary><p>Not in this version. It models a single starting amount left to grow. Recurring deposits would increase the final balance further.</p></details>
-    <details><summary>Are results guaranteed?</summary><p>No. Rates change, and fees or taxes can reduce real returns. This is an educational estimate.</p></details>
+    <section class="faq-section">
+      <details><summary>Does this include monthly deposits?</summary><p>Not in the basic formula. It grows a single starting amount. Future versions may add contributions.</p></details>
+      <details><summary>Is the rate APY or APR?</summary><p>Enter the nominal annual rate your account uses; compounding frequency is selected separately.</p></details>
+      <details><summary>Are investment returns guaranteed?</summary><p>No. Markets fluctuate. This is a mathematical projection, not a promise of returns.</p></details>
+      <details><summary>What about taxes and fees?</summary><p>Not deducted. Real accounts may withhold tax or charge fees that reduce growth.</p></details>
+      <details><summary>Why does daily compounding help only a little?</summary><p>Beyond monthly compounding, the extra growth is usually small at typical savings rates.</p></details>
+    </section>
     <h2>Related calculators</h2>
     <ul class="related-list">
-      <li><a href="/loan-payment-calculator.html">Loan Payment Calculator</a></li>
       <li><a href="/mortgage-payment-calculator.html">Mortgage Payment Calculator</a></li>
-      <li><a href="/percentage-calculator.html">Percentage Calculator</a></li>
+      <li><a href="/loan-payment-calculator.html">Loan Payment Calculator</a></li>
+      <li><a href="/paycheck-calculator.html">Paycheck Calculator</a></li>
     </ul>
-    <p style="margin-top:28px;font-size:13px;color:#6a7a72">Results are estimates for general information, not professional advice. <a href="/">Browse all EverydayCalc tools</a>.</p>
+    <p style="margin-top:28px;font-size:13px;color:#6a7a72">Estimates only—not investment advice. <a href="/">All tools</a> · <a href="/about.html">About</a></p>
   </main>
+
   <footer class="site-footer">
     <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
-    <span>© <span id="year"></span> EverydayCalc</span>
-    <a href="/privacy.html">Privacy</a>
+    <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
+    <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a>
   </footer>
   <dialog id="calcDialog" class="calc-dialog">
-    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog">×</button></div>
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
     <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
-    <div id="calcResult" class="calc-result" hidden></div>
+    <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
     <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
   </dialog>
-  <script>window.PAGE_TOOL = "compound";</script>
-  <script src="script.js" defer></script>
+  <script>window.PAGE_TOOL="compound";</script>
+  <script src="script.js?v=4" defer></script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
 </body>
 </html>
