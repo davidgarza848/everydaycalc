@@ -2,33 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Contact EverydayCalc about calculator issues, corrections, and suggestions.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact EverydayCalc about calculator issues, corrections, privacy questions, or suggestions for new tools.">
   <link rel="canonical" href="https://evrydaycalc.com/contact.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#173b35">
   <title>Contact — EverydayCalc</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
-    <nav>
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
       <a href="/#calculators">Calculators</a>
-      <a href="privacy.html">Privacy</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </header>
+
   <main class="privacy-section">
     <span class="eyebrow">GET IN TOUCH</span>
     <h1>Contact EverydayCalc</h1>
-    <p>Found a calculator issue or have an idea for a new tool? You can send a message through the website's public GitHub repository.</p>
-    <p><a class="button button-primary" href="https://github.com/davidgarza848/everydaycalc/issues">Open contact / feedback page</a></p>
-    <p>Please do not post private information, financial account details, or other sensitive data in public issues.</p>
-    <p><a href="/">← Back to EverydayCalc</a></p>
+    <p>We welcome feedback about calculator accuracy, unclear results, accessibility problems, privacy questions, and ideas for new tools. EverydayCalc is a small project; we read messages and use them to improve the site.</p>
+
+    <h2>How to reach us</h2>
+    <p><strong>Email:</strong> <a href="mailto:hello@evrydaycalc.com">hello@evrydaycalc.com</a></p>
+    <p>For public bug reports or feature ideas you may also open an issue on the project repository:</p>
+    <p><a class="button button-primary" href="https://github.com/davidgarza848/everydaycalc/issues">Open a GitHub issue</a></p>
+
+    <h2>What to include</h2>
+    <ul>
+      <li>Which calculator you used</li>
+      <li>What you entered and what result you expected</li>
+      <li>Your device and browser if something looks broken</li>
+    </ul>
+    <p>Please do not send passwords, bank account numbers, Social Security numbers, or other sensitive personal data. Calculator inputs are meant to stay on your device; we do not need full financial account details to help with a formula question.</p>
+
+    <h2>Response time</h2>
+    <p>This is not a 24/7 support desk. We aim to review messages when we can. Urgent financial, tax, medical, or legal decisions should be handled with a qualified professional—not delayed for a website reply.</p>
+
+    <p><a href="/">← Back to EverydayCalc</a> · <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a></p>
   </main>
   <footer class="site-footer">
+    <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
     <span>© <span id="year"></span> EverydayCalc</span>
-    <a href="privacy.html">Privacy</a>
+    <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a>
   </footer>
-  <script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
 </body>
 </html>
