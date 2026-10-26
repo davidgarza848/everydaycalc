@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1393568965745519" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amortization Schedule Calculator — Monthly Principal & Interest</title>
+  <meta name="description" content="Free amortization schedule calculator. See monthly payment, total interest, and how much principal vs interest you pay in year one on a fixed-rate loan.">
+  <meta name="keywords" content="amortization schedule, amortization calculator, loan amortization, mortgage amortization">
+  <meta name="theme-color" content="#173b35">
+  <link rel="canonical" href="https://evrydaycalc.com/amortization-schedule-calculator.html">
+  <meta property="og:title" content="Amortization Schedule Calculator — Monthly Principal & Interest">
+  <meta property="og:description" content="Free amortization schedule calculator. See monthly payment, total interest, and year-one principal vs interest.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evrydaycalc.com/amortization-schedule-calculator.html">
+  <meta property="og:site_name" content="EverydayCalc">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-open-tool="amort">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="tool-page">
+    <div class="tool-page-hero">
+      <span class="eyebrow">MONEY</span>
+      <h1>Amortization Schedule Calculator</h1>
+      <p>Estimate a fixed monthly payment and see total interest plus how much of your first year goes to interest versus principal. Designed for fixed-rate home or personal loans.</p>
+      <button type="button" class="button button-primary" id="openToolBtn">Open calculator</button>
+    </div>
+    <h2>Who this calculator is for</h2>
+    <div class="content-block">
+      <p>Use this when you want more than a single payment number—especially how costly the early years are in interest, or how term length changes lifetime cost. It pairs with the mortgage and loan payment tools.</p>
+    </div>
+    <h2>How amortization works</h2>
+    <div class="content-block">
+      <p>Each payment is the same dollar amount. Interest for the month is charged on the remaining balance; the rest of the payment reduces principal. Early payments are mostly interest; later payments are mostly principal.</p>
+      <p class="formula">Payment = P × r(1+r)<sup>n</sup> / ((1+r)<sup>n</sup> − 1)</p>
+    </div>
+    <h2>Worked examples</h2>
+    <div class="content-block">
+      <p><strong>Example 1.</strong> $350,000 at 6.5% for 30 years → about <strong>$2,213/mo</strong>. Year one is heavily interest-weighted.</p>
+      <p><strong>Example 2.</strong> Same loan for 15 years raises the payment but cuts total interest sharply.</p>
+    </div>
+    <h2>Frequently asked questions</h2>
+    <section class="faq-section">
+      <details><summary>Does this include taxes and insurance?</summary><p>No. Principal and interest only.</p></details>
+      <details><summary>Can I model extra payments?</summary><p>Not in this version. Extra principal payments reduce interest and shorten the loan.</p></details>
+      <details><summary>Is this a full month-by-month table?</summary><p>This tool summarizes payment, totals, and year-one split. Use it for planning estimates.</p></details>
+      <details><summary>Fixed rate only?</summary><p>Yes. ARMs are not modeled.</p></details>
+    </section>
+    <h2>Related calculators</h2>
+    <ul class="related-list">
+      <li><a href="/mortgage-payment-calculator.html">Mortgage Payment Calculator</a></li>
+      <li><a href="/loan-payment-calculator.html">Loan Payment Calculator</a></li>
+      <li><a href="/refinance-calculator.html">Refinance Break-Even</a></li>
+    </ul>
+    <p style="margin-top:28px;font-size:13px;color:#6a7a72">Estimates only—not lending advice. <a href="/">All tools</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
+    <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a>
+  </footer>
+  <dialog id="calcDialog" class="calc-dialog">
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
+    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
+    <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
+    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
+  </dialog>
+  <script>window.PAGE_TOOL="amort";</script>
+  <script src="script.js?v=5" defer></script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>

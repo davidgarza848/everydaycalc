@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1393568965745519" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Refinance Calculator — Break-Even & Payment Comparison</title>
+  <meta name="description" content="Free refinance break-even calculator. Compare current vs new loan payments and estimate how many months to recover closing costs.">
+  <meta name="keywords" content="refinance calculator, mortgage refinance break even, refinancing calculator, break even refinance">
+  <meta name="theme-color" content="#173b35">
+  <link rel="canonical" href="https://evrydaycalc.com/refinance-calculator.html">
+  <meta property="og:title" content="Refinance Calculator — Break-Even & Payment Comparison">
+  <meta property="og:description" content="Compare current vs new loan payments and estimate months to recover closing costs.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evrydaycalc.com/refinance-calculator.html">
+  <meta property="og:site_name" content="EverydayCalc">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-open-tool="refinance">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="tool-page">
+    <div class="tool-page-hero">
+      <span class="eyebrow">MONEY</span>
+      <h1>Refinance Break-Even Calculator</h1>
+      <p>Compare your current payment with a new loan payment and estimate how long it takes for monthly savings to cover closing costs.</p>
+      <button type="button" class="button button-primary" id="openToolBtn">Open calculator</button>
+    </div>
+    <h2>Who this calculator is for</h2>
+    <div class="content-block">
+      <p>Homeowners or borrowers considering a rate-and-term refinance who want a quick sense of monthly savings and break-even time. It is a simplified model—not a lender disclosure.</p>
+    </div>
+    <h2>How break-even is estimated</h2>
+    <div class="content-block">
+      <p>We compute a fixed payment on the current balance for remaining term at the current rate, and a new payment at the new rate and term. Monthly savings ≈ current payment − new payment. Break-even months ≈ closing costs ÷ monthly savings (when savings are positive).</p>
+    </div>
+    <h2>Worked examples</h2>
+    <div class="content-block">
+      <p><strong>Example.</strong> $300,000 balance, 7% with 25 years left vs 6% for 30 years with $4,000 costs. Payment usually drops; break-even depends on how large the savings are each month.</p>
+    </div>
+    <h2>Frequently asked questions</h2>
+    <section class="faq-section">
+      <details><summary>Should I reset to 30 years?</summary><p>A longer new term can lower the payment but may increase total interest. Compare total cost, not only the monthly bill.</p></details>
+      <details><summary>Are points included?</summary><p>Include points and lender fees in closing costs for a fairer break-even.</p></details>
+      <details><summary>What if the new payment is higher?</summary><p>The tool will show that. Refinancing may still be considered for other reasons (cash-out, shorter term), which this simple model does not fully capture.</p></details>
+    </section>
+    <h2>Related calculators</h2>
+    <ul class="related-list">
+      <li><a href="/mortgage-payment-calculator.html">Mortgage Payment Calculator</a></li>
+      <li><a href="/amortization-schedule-calculator.html">Amortization Schedule</a></li>
+      <li><a href="/loan-payment-calculator.html">Loan Payment Calculator</a></li>
+    </ul>
+    <p style="margin-top:28px;font-size:13px;color:#6a7a72">Estimates only—not lending advice. <a href="/">All tools</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
+    <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a>
+  </footer>
+  <dialog id="calcDialog" class="calc-dialog">
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
+    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
+    <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
+    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
+  </dialog>
+  <script>window.PAGE_TOOL="refinance";</script>
+  <script src="script.js?v=5" defer></script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
