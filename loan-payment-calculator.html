@@ -1,1 +1,89 @@
-<!doctype html><html lang="en"><head><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1393568965745519" crossorigin="anonymous"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Loan Payment Calculator — Monthly Payment & Interest</title><meta name="description" content="Estimate fixed monthly loan payments and total interest. Free loan payment calculator for principal, rate, and term."><link rel="canonical" href="https://evrydaycalc.com/loan-payment-calculator.html"><meta property="og:title" content="Loan Payment Calculator"><meta property="og:description" content="Estimate fixed monthly loan payments and total interest."><meta property="og:url" content="https://evrydaycalc.com/loan-payment-calculator.html"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Loan Payment Calculator","url":"https://evrydaycalc.com/loan-payment-calculator.html","applicationCategory":"UtilitiesApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does this include fees or insurance?","acceptedAnswer":{"@type":"Answer","text":"No. It models principal and interest only for a fixed-rate amortizing loan."}}]}</script></head><body data-open-tool="loan"><header class="site-header"><a class="brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a><nav><a href="/#calculators">Calculators</a><a href="/privacy.html">Privacy</a></nav></header><main class="tool-page"><p class="breadcrumb"><a href="/">Home</a> · Money</p><h1>Loan Payment Calculator</h1><p class="lead">Estimate a fixed monthly payment for a loan with a constant interest rate. See total paid and total interest over the life of the loan.</p><div class="open-cta"><button type="button" class="button button-primary" id="openToolBtn">Open calculator</button></div><h2>How to use</h2><ol><li>Enter the loan amount (principal).</li><li>Enter the annual interest rate (APR).</li><li>Enter the term in years.</li><li>Review monthly payment, total paid, and total interest.</li></ol><h2>Formula</h2><div class="content-block"><p class="formula">Payment = P × r(1+r)^n / ((1+r)^n − 1)</p></div><h2>Example</h2><div class="content-block"><p>A $15,000 loan at 7% APR for 5 years has about $297/month estimated payment.</p></div><h2>FAQ</h2><details><summary>Does this include fees?</summary><p>No. Principal and interest only for a fixed-rate loan.</p></details><h2>Related</h2><ul class="related-list"><li><a href="/paycheck-calculator.html">Paycheck Calculator</a></li><li><a href="/discount-calculator.html">Discount Calculator</a></li></ul></main><footer class="site-footer"><a href="/">EverydayCalc</a><span>© <span id="year"></span></span></footer><dialog id="calcDialog" class="calc-dialog"><div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog">×</button></div><form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form><div id="calcResult" class="calc-result" hidden></div><p class="calc-disclaimer" id="calcDisclaimer">Estimates only.</p></dialog><script>window.PAGE_TOOL="loan";</script><script src="script.js" defer></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1393568965745519" crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loan Payment Calculator — Monthly Payment & Interest</title>
+  <meta name="description" content="Free loan payment calculator. Estimate fixed monthly payments, total interest, and total cost for personal loans, auto loans, and more.">
+  <meta name="keywords" content="loan payment calculator, monthly loan payment, personal loan calculator, auto loan payment">
+  <meta name="theme-color" content="#173b35">
+  <link rel="canonical" href="https://evrydaycalc.com/loan-payment-calculator.html">
+  <meta property="og:title" content="Loan Payment Calculator — Monthly Payment & Interest">
+  <meta property="og:description" content="Free loan payment calculator. Estimate fixed monthly payments, total interest, and total cost for personal loans, auto loans, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://evrydaycalc.com/loan-payment-calculator.html">
+  <meta property="og:site_name" content="EverydayCalc">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=4">
+</head>
+<body data-open-tool="loan">
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="EverydayCalc home"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <nav aria-label="Main navigation">
+      <a href="/#calculators">Calculators</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="tool-page">
+    <div class="tool-page-hero">
+      <span class="eyebrow">MONEY</span>
+      <h1>Loan Payment Calculator</h1>
+      <p>Estimate a fixed monthly payment for a personal loan, auto loan, or other installment loan. See how rate and term affect total interest and overall cost.</p>
+      <button type="button" class="button button-primary" id="openToolBtn">Open calculator</button>
+    </div>
+    <h2>Who this calculator is for</h2>
+    <div class="content-block">
+      <p>Use this tool to compare loan offers, check whether a payment fits your budget, or see how a shorter term changes total interest. It assumes a fixed interest rate and equal monthly payments that fully repay the loan by the end of the term.</p>
+      <p>It does not include origination fees, prepayment penalties, or variable rates unless you adjust the inputs yourself to approximate them.</p>
+    </div>
+    <h2>How the calculation works</h2>
+    <div class="content-block">
+      <p class="formula">Payment = P × r(1+r)<sup>n</sup> / ((1+r)<sup>n</sup> − 1)</p>
+      <p><strong>P</strong> is the amount borrowed, <strong>r</strong> is the monthly rate (APR ÷ 12), and <strong>n</strong> is the number of months. The same formula is used for many fixed-rate mortgages; only typical amounts and terms differ.</p>
+    </div>
+    <h2>Worked examples</h2>
+    <div class="content-block">
+      <p><strong>Example 1 — personal loan.</strong> $15,000 at 7% for 5 years → about <strong>$297/month</strong>, roughly $2,820 in interest over the term.</p>
+      <p><strong>Example 2 — auto-style loan.</strong> $28,000 at 6% for 60 months → about <strong>$541/month</strong>.</p>
+      <p><strong>Example 3 — shorter term.</strong> Same $15,000 at 7% for 3 years raises the monthly payment but cuts total interest versus five years.</p>
+    </div>
+    <h2>Frequently asked questions</h2>
+    <section class="faq-section">
+      <details><summary>Does this include loan fees?</summary><p>No. Fees can raise the effective cost. Ask the lender for APR that includes fees when comparing offers.</p></details>
+      <details><summary>Can I use this for credit cards?</summary><p>Not well. Credit cards often use different methods and variable rates. This tool is for fixed installment loans.</p></details>
+      <details><summary>What if I pay extra each month?</summary><p>Extra principal payments reduce interest and shorten the loan. This basic calculator shows the scheduled payment only.</p></details>
+      <details><summary>Is a lower payment always better?</summary><p>Not necessarily. Longer terms lower the monthly payment but usually increase total interest.</p></details>
+      <details><summary>Are results a loan approval?</summary><p>No. Approval depends on credit, income, and lender policy.</p></details>
+    </section>
+    <h2>Related calculators</h2>
+    <ul class="related-list">
+      <li><a href="/mortgage-payment-calculator.html">Mortgage Payment Calculator</a></li>
+      <li><a href="/paycheck-calculator.html">Paycheck Calculator</a></li>
+      <li><a href="/compound-interest-calculator.html">Compound Interest Calculator</a></li>
+    </ul>
+    <p style="margin-top:28px;font-size:13px;color:#6a7a72">Estimates only—not lending advice. <a href="/">All tools</a> · <a href="/about.html">About</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="/"><span class="brand-mark">EC</span><span>Everyday<span class="brand-light">Calc</span></span></a>
+    <span>© <span id="year"></span> EverydayCalc. Free tools for everyday life.</span>
+    <a href="/about.html">About</a> · <a href="/privacy.html">Privacy</a> · <a href="/contact.html">Contact</a>
+  </footer>
+  <dialog id="calcDialog" class="calc-dialog">
+    <div class="dialog-header"><div><span class="eyebrow" id="dialogCategory">CALCULATOR</span><h2 id="dialogTitle">Calculator</h2></div><button type="button" class="close-dialog" id="closeDialog" aria-label="Close calculator">×</button></div>
+    <form id="calcForm"><div id="calcFields" class="calc-fields"></div><button class="button button-primary calculate-button" type="submit">Calculate result</button></form>
+    <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
+    <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates for general information.</p>
+  </dialog>
+  <script>window.PAGE_TOOL="loan";</script>
+  <script src="script.js?v=4" defer></script>
+  <script>document.getElementById("year").textContent=new Date().getFullYear()</script>
+</body>
+</html>
