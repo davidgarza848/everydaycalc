@@ -23,7 +23,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"EverydayCalc","url":"https://evrydaycalc.com/","description":"Free everyday calculators for paychecks, mortgages, loans, tips, BMI, grades, and more. No account needed."}
   </script>
@@ -97,6 +97,15 @@
         </a>
         <a class="tool-card" href="/mortgage-payment-calculator.html" data-tool="mortgage" data-category="money" data-keywords="mortgage home loan payment monthly principal interest house">
           <span class="tool-icon mint">⌂</span><span class="tool-category">MONEY</span><strong>Mortgage Payment</strong><span class="tool-desc">Estimate monthly principal and interest on a fixed-rate home loan.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </a>
+        <a class="tool-card" href="/amortization-schedule-calculator.html" data-tool="amort" data-category="money" data-keywords="amortization schedule loan mortgage principal interest">
+          <span class="tool-icon blue">▤</span><span class="tool-category">MONEY</span><strong>Amortization Schedule</strong><span class="tool-desc">See payment, total interest, and year-one principal vs interest.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </a>
+        <a class="tool-card" href="/car-loan-calculator.html" data-tool="carloan" data-category="money" data-keywords="car loan auto loan vehicle payment monthly">
+          <span class="tool-icon peach">▣</span><span class="tool-category">MONEY</span><strong>Car Loan Payment</strong><span class="tool-desc">Estimate monthly payments and total interest on an auto loan.</span><span class="tool-link">Open calculator <b>↗</b></span>
+        </a>
+        <a class="tool-card" href="/refinance-calculator.html" data-tool="refinance" data-category="money" data-keywords="refinance break even mortgage refinance closing costs">
+          <span class="tool-icon lavender">⇄</span><span class="tool-category">MONEY</span><strong>Refinance Break-Even</strong><span class="tool-desc">Compare payments and estimate months to recover closing costs.</span><span class="tool-link">Open calculator <b>↗</b></span>
         </a>
         <a class="tool-card" href="/compound-interest-calculator.html" data-tool="compound" data-category="money" data-keywords="compound interest savings growth investment APY">
           <span class="tool-icon lavender">↗</span><span class="tool-category">MONEY</span><strong>Compound Interest</strong><span class="tool-desc">See how savings grow with monthly or daily compounding.</span><span class="tool-link">Open calculator <b>↗</b></span>
@@ -215,7 +224,7 @@
     <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
     <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates.</p>
   </dialog>
-  <script src="script.js?v=4" defer></script>
+  <script src="script.js?v=5" defer></script>
   <script>document.getElementById("year")&&(document.getElementById("year").textContent=new Date().getFullYear())</script>
 </body>
 </html>
