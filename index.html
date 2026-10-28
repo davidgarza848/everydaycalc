@@ -23,7 +23,7 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <title>EverydayCalc — Free Calculators for Everyday Life</title>
-  <link rel="stylesheet" href="styles.css?v=5">
+  <link rel="stylesheet" href="styles.css?v=6">
   <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","name":"EverydayCalc","url":"https://evrydaycalc.com/","description":"Free everyday calculators for paychecks, mortgages, loans, tips, BMI, grades, and more. No account needed."}
   </script>
@@ -45,7 +45,7 @@
       <div class="hero-copy">
         <span class="eyebrow">FREE TOOLS • SIMPLE ANSWERS</span>
         <h1>Make everyday math<br><em>make sense.</em></h1>
-        <p>Fast, free calculators for your money, work, shopping, school, and daily life. No account needed.</p>
+        <p>Fast, free calculators for paychecks, mortgages, loans, shopping, school, and daily life. Each tool shows how the estimate is calculated—not only a final number—so you can decide if it fits your situation. No account needed.</p>
         <a class="button button-primary" href="#calculators">Explore calculators <span aria-hidden="true">↓</span></a>
         <div class="hero-note"><span class="check">✓</span> Free to use <span class="dot">·</span> Works on your phone <span class="dot">·</span> No sign-up</div>
       </div>
@@ -69,9 +69,19 @@
 
     <div class="ad-slot ad-slot-top" aria-label="Sponsored"><p class="ad-label">Sponsored</p></div>
 
+    <section class="about-section" id="why" style="padding-bottom:8px">
+      <div>
+        <span class="eyebrow">WHY EVERYDAYCALC</span>
+        <h2>More than a list of widgets.</h2>
+      </div>
+      <p>EverydayCalc is a small set of free browser calculators for common money, work, and everyday questions. We built it so you can get a clear estimate quickly—and see the idea behind the math—without creating an account or sending personal financial data to our servers.</p>
+      <p>Calculations run on your device. Results are general estimates for education and planning, not tax, lending, legal, or medical advice. When a decision is important, confirm numbers with a qualified professional or your lender, employer, or tax software.</p>
+      <p>Start with a tool below, or read the short guides further down the page to understand what each estimate includes and leaves out.</p>
+    </section>
+
     <section class="tools-section" id="calculators">
       <div class="section-heading">
-        <div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need to calculate?</h2><p>Choose a tool below to get started. Results update as you type.</p></div>
+        <div><span class="eyebrow">THE TOOLBOX</span><h2>What do you need to calculate?</h2><p>Choose a tool to open a full page with examples and FAQs, or run a quick estimate in the dialog. Results update as you type. Money tools (mortgage, loan, refinance, paycheck) include more explanation because those decisions are higher stakes.</p></div>
         <div class="search-box"><span aria-hidden="true">⌕</span><input id="toolSearch" type="search" placeholder="Search calculators..." autocomplete="off" enterkeyhint="search" aria-label="Search calculators"></div>
       </div>
       <div class="category-tabs" role="group" aria-label="Filter calculator category">
@@ -152,31 +162,39 @@
     <section class="guides-section" id="guides">
       <span class="eyebrow">QUICK GUIDES</span>
       <h2>How these calculators work</h2>
-      <p class="guides-intro">Short explanations so you understand the numbers — not just the result.</p>
+      <p class="guides-intro">Short explanations so you understand the numbers—not only the result. Open any money tool for worked examples and FAQs on a dedicated page.</p>
       <div class="guides-grid">
         <article class="guide-card">
           <h3>Paycheck estimates</h3>
-          <p>Enter your gross pay and an estimated tax/deduction rate. Net pay is gross × (1 − rate). This is a rough guide only — real withholding depends on filing status, state tax, benefits, and more.</p>
+          <p>Enter gross pay and an estimated tax/deduction rate. Net ≈ gross × (1 − rate). Real take-home depends on filing status, state tax, benefits, and retirement contributions. Use the <a href="/paycheck-calculator.html">paycheck calculator</a> for a starting point, then compare with a pay stub.</p>
         </article>
         <article class="guide-card">
-          <h3>Loan payments</h3>
-          <p>We use the standard fixed-rate formula: payment = P × r(1+r)<sup>n</sup> / ((1+r)<sup>n</sup> − 1), where r is the monthly rate and n is the number of months. Fees and variable rates are not included.</p>
+          <h3>Loan &amp; car payments</h3>
+          <p>We use the standard fixed-rate formula: payment = P × r(1+r)<sup>n</sup> / ((1+r)<sup>n</sup> − 1), where r is the monthly rate and n is the number of payments. Fees, insurance, and variable rates are not included. See the <a href="/loan-payment-calculator.html">loan</a> and <a href="/car-loan-calculator.html">car loan</a> tools.</p>
         </article>
         <article class="guide-card">
-          <h3>Overtime & schedules</h3>
-          <p>Regular hours are paid at your base rate; overtime uses the multiplier you enter (often 1.5). The schedule tool subtracts unpaid breaks and supports overnight shifts. Always confirm with your employer’s rules.</p>
+          <h3>Mortgage &amp; amortization</h3>
+          <p>Mortgage payment estimates use the same fixed-payment math as other loans, usually over 15–30 years. The <a href="/amortization-schedule-calculator.html">amortization schedule</a> shows how early payments are mostly interest. Taxes, insurance, HOA, and PMI are separate.</p>
         </article>
         <article class="guide-card">
-          <h3>BMI</h3>
-          <p>BMI = weight (kg) ÷ height (m)². Categories follow common WHO adult ranges. BMI is a screening number only — it does not measure body fat or health directly.</p>
+          <h3>Refinance break-even</h3>
+          <p>Compare your current payment with a new rate and term, then divide closing costs by monthly savings to estimate months to break even. A lower payment is not always cheaper overall if the term stretches. Use the <a href="/refinance-calculator.html">refinance calculator</a> for a simplified view.</p>
         </article>
         <article class="guide-card">
-          <h3>Mortgage vs. personal loans</h3>
-          <p>Both use the same fixed-payment formula. Mortgage terms are usually longer (15–30 years) and rates differ. Neither estimate includes taxes, insurance, or fees.</p>
+          <h3>Overtime &amp; schedules</h3>
+          <p>Regular hours use your base rate; overtime uses the multiplier you enter (often 1.5×). The schedule tool subtracts unpaid breaks and can handle overnight shifts. Labor rules vary—confirm with your employer.</p>
         </article>
         <article class="guide-card">
           <h3>Compound interest</h3>
-          <p>A = P(1 + r/n)<sup>n·t</sup>. More frequent compounding grows the balance slightly faster. This tool does not model recurring deposits or fees.</p>
+          <p>A = P(1 + r/n)<sup>n·t</sup>. More frequent compounding grows a balance slightly faster. This tool does not model monthly deposits, fees, or taxes. Helpful for rough savings growth questions.</p>
+        </article>
+        <article class="guide-card">
+          <h3>BMI (screening only)</h3>
+          <p>BMI = weight (kg) ÷ height (m)². Categories follow common WHO adult ranges. BMI does not measure body fat or diagnose health conditions—treat it as a simple screening number.</p>
+        </article>
+        <article class="guide-card">
+          <h3>Shopping &amp; everyday math</h3>
+          <p>Sales tax, discounts, tips, percentages, grades, and unit conversion are quick utilities. They are intentionally simple. For money decisions with long-term impact, prefer the dedicated loan and mortgage pages.</p>
         </article>
       </div>
     </section>
@@ -190,17 +208,21 @@
 
     <section class="about-section" id="about">
       <div><span class="eyebrow">OUR APPROACH</span><h2>Useful answers.<br><em>Without the fuss.</em></h2></div>
-      <p>EverydayCalc is a free set of browser-based calculators for paychecks, mortgages, loans, shopping, school, health screening numbers, and everyday math. Each tool shows the idea behind the result—not only a final number—so you can judge whether the estimate fits your situation.</p>
-      <p>Calculations run on your device. We do not require an account. Results are general estimates, not professional financial, tax, legal, or medical advice. Learn more on the <a href="about.html">About page</a> or <a href="contact.html">contact us</a> with feedback.</p>
+      <p>EverydayCalc is a free set of browser-based calculators for paychecks, mortgages, loans, refinancing questions, shopping, school, health screening numbers, and everyday math. Each tool is meant to be understandable: you see the estimate and the idea behind it, so you can judge whether it fits your situation.</p>
+      <p>We focus on common tasks—take-home pay ballparks, fixed loan payments, amortization interest, refinance break-even, tips, percentages, and unit conversion—without requiring an account. Calculations run on your device; the numbers you type into a calculator are not sent to EverydayCalc servers as part of the calculation.</p>
+      <p>Results are general estimates for education and planning. They are not professional financial, tax, legal, or medical advice, and they are not a lender or employer quote. For important decisions, verify with a qualified professional or the institution involved.</p>
+      <p>Learn more on the <a href="about.html">About page</a>, read the <a href="privacy.html">privacy policy</a>, or <a href="contact.html">contact us</a> at hello@evrydaycalc.com with corrections or tool ideas.</p>
     </section>
 
     <section class="faq-section">
       <span class="eyebrow">GOOD TO KNOW</span><h2>Frequently asked questions</h2>
-      <details><summary>Are these calculators free?</summary><p>Yes. You can use the calculators without creating an account.</p></details>
-      <details><summary>Are the results official financial or tax advice?</summary><p>No. Results are estimates. Paycheck estimates use the tax rate you enter and do not calculate actual federal, state, or local tax liability. Loan results assume a fixed rate and regular monthly payments.</p></details>
-      <details><summary>How does EverydayCalc make money?</summary><p>The site uses Google AdSense advertising to help cover costs and keep the tools free. No account is required to use the calculators.</p></details>
-      <details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to mobile phones, tablets, and desktop screens. You can also bookmark individual calculators using the address bar after opening them.</p></details>
-      <details><summary>Do you store the numbers I enter?</summary><p>No. Calculations run entirely in your browser. The values you type are not sent to EverydayCalc servers.</p></details>
+      <details><summary>Are these calculators free?</summary><p>Yes. You can use the calculators without creating an account. The site is supported by advertising so the tools can stay free to use.</p></details>
+      <details><summary>Are the results official financial or tax advice?</summary><p>No. Results are estimates for general information. Paycheck estimates use the tax rate you enter and do not calculate actual federal, state, or local tax liability. Loan and mortgage results assume a fixed rate and regular payments and exclude many fees and insurance costs.</p></details>
+      <details><summary>Why do money tools have longer pages?</summary><p>Borrowing, refinancing, and paycheck planning affect real budgets. Those pages include examples, limitations, and FAQs so the estimate is easier to interpret—not only a single number on a blank page.</p></details>
+      <details><summary>How does EverydayCalc make money?</summary><p>The site uses Google AdSense advertising to help cover costs and keep the tools free. No account is required to use the calculators. See the privacy policy for how ads and cookies work.</p></details>
+      <details><summary>Can I use it on my phone?</summary><p>Yes. The layout adapts to phones, tablets, and desktop screens. You can bookmark individual calculator pages from the address bar.</p></details>
+      <details><summary>Do you store the numbers I enter?</summary><p>Calculator math runs in your browser. The values you type into a tool are not sent to EverydayCalc servers as part of computing the result. Advertising partners may use cookies as described in the privacy policy.</p></details>
+      <details><summary>How do I report a mistake or request a tool?</summary><p>Email <a href="mailto:hello@evrydaycalc.com">hello@evrydaycalc.com</a> with the calculator name, what you entered, and what you expected. We read messages and use them to improve the site.</p></details>
     </section>
 
     <section class="privacy-section" id="privacy">
@@ -224,7 +246,7 @@
     <div id="calcResult" class="calc-result" aria-live="polite" hidden></div>
     <p class="calc-disclaimer" id="calcDisclaimer">Results are estimates.</p>
   </dialog>
-  <script src="script.js?v=5" defer></script>
+  <script src="script.js?v=6" defer></script>
   <script>document.getElementById("year")&&(document.getElementById("year").textContent=new Date().getFullYear())</script>
 </body>
 </html>
